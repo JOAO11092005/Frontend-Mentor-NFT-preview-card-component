@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+:root{
+    --cor-de-fundo: hsl(216, 50%, 16%);
+    --cor-da-caixa: hsl(215, 32%, 27%);
+    --box-sizing: ;
+    --cor-da-letra-branca:  hsl(178, 100%, 50%);
+    --cor-letra-mais-escura:  hsl(215, 51%, 70%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-de-fundo);
+    box-shadow: 0px 16px 55px 64px rgba(0,0,0,0.1);
+}
+main{
+    background-color: var(--cor-da-caixa);
+    width: 310px;
+    height: 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+main > .imagem > img{
+    width: 270px;
+    border-radius: 10px;
+    
+}
+
+main > .imagem{
+    text-align: center;
+}
+main > h1 , main > .valor-e-tempo{
+    color: var(--cor-da-letra-branca);
+}
+main > .valor-e-tempo > .tempo{
+    color: var(--cor-letra-mais-escura);
+}
+main > h1{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+main > p{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color: var(--cor-letra-mais-escura);
+}
+main > hr{
+    width: 270px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+}
+main > .valor-e-tempo{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+main > .valor-e-tempo h2{
+    font-size: 15px;
+}
+main > .perfil{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 20px;
+    color: var(--cor-da-letra-branca);
+}
+main > .perfil span{
+    color: var(--cor-letra-mais-escura);
+}
+main > .perfil img{
+    width: 35px;
+    border: 2px solid white;
+    border-radius: 50px;
+    
+}
+main > .valor-e-tempo > .valor , main > .valor-e-tempo > .tempo{
+    display: flex;
+    gap: 5px;
+}
+
+
+.attribution{
+   background-color: rgb(63, 45, 45);
+   position: absolute;
+   bottom: 0;
+   padding: 20px;
+   color: white;
+   border-radius: 10px;
+   
+}
+.attribution a{
+  color: #000000;
+  text-decoration: none;
+  padding: 10px;
+  
+}
+.attribution a:hover{
+    background-color: blue;
+    border-radius: 10px;
+}
+@media(max-width: 507px){
+    .attribution{
+        display: none;
+    }
+}
